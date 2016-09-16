@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jfann</title>
+    <meta name="description" content="jonathan fann is a front end developer, graphic designer, and musician.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <a href="#" id="btn"><img class="mail" src="img/mail.png"></a>
+    <h1>jfann</h1>
+    <p><a href="https://www.linkedin.com/in/jonathan-fann-b3330980" target="_blank">front end developer</a>, <a href="https://dribbble.com/jonathanfann" target="_blank">graphic designer</a>, <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjXg7jCy6HOAhUK4iYKHRJuDTYQFggcMAA&url=https%3A%2F%2Fopen.spotify.com%2Fartist%2F4dlgwFSLp5AFTNzabcuJV1&usg=AFQjCNFJQJTJX8BZ5ooNPLwv3C179Z-eZA&sig2=6XJVrIZG9yZVKzhFeCSyVQ&bvm=bv.128617741,d.eWE" target="_blank">musician</a></p>
+    <div id="contact" class="pink">
+      <form action="https://formspree.io/jonathanjfann@gmail.com"
+      method="POST">
+        <p>Send Mail</p>
+        <div class="formbody">
+          <input type="text" name="name" placeholder="name" required>
+          <input type="email" name="_replyto" placeholder="email" required>
+          <input type="text" name="msg" placeholder="msg" required>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="submit" value="send">
+          <input type="hidden" name="_next" value="/thanks.html" />
+        </div>
+      </form>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn').click(function() {
+          $('#contact').toggleClass('show');
+        })
+    });
+    </script>
+  </body>
+</html>

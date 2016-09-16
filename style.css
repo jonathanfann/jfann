@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Hairline);
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:400italic);
+
+html {
+  background-image:url(img/bg.jpg);
+  background-color:#333;
+  color:#fff;
+  font-family: 'Cormorant Garamond', serif;
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+  text-align:center;
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+}
+
+h1 {
+  margin-top:30vh;
+  font-family: 'Bungee Hairline', cursive;
+  font-size:80px;
+}
+
+p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size:24px;
+}
+
+#btn {
+  position:fixed;
+  z-index:12;
+  top:10px;
+  right:10px;
+  padding:10px 10px 6px;
+  background:#eb01d6;
+  border-bottom:0;
+  margin-bottom:0;
+  transition:background ease-in-out 0.2s;
+}
+
+#btn:hover, #btn:active, #btn:focus {
+  background:#a40095;
+  transition:background ease-in-out 0.2s;
+}
+
+.mail {
+  height:50px;
+  width:auto;
+}
+
+a {
+  color:#fff;
+  text-decoration:none;
+  border-bottom:2px dotted transparent;
+  transition:border-bottom ease-in-out 0.2s;
+}
+
+a:hover, a:active, a:focus {
+  border-bottom:2px dotted #fff;
+  transition:border-bottom ease-in-out 0.2s;
+}
+
+.formbody {
+  width:80%;
+  max-width:600px;
+  margin:0 auto;
+  text-align:center;
+}
+
+input {
+    text-align:center;
+    font-family:'Bungee Hairline', cursive;
+    padding:20px 0;
+    width:100%;
+    background:transparent;
+    border: none;
+    color:#fff;
+    border-bottom: 2px solid #eee;
+}
+
+input[type=submit] {
+  font-family:'Bungee Hairline', cursive;
+  color:#eb01d6;
+  width:100%;
+  border-bottom:2px solid #eb01d6;
+}
+
+textarea, input { outline: none; }
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.pink {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  min-height:200px;
+  padding:0 0 50px;
+  background:rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+#contact {
+  z-index:-999;
+  opacity:0;
+  transition:opacity 0.5s ease-in-out;
+}
+
+#contact.show {
+  z-index:6;
+  opacity:1;
+  transition:opacity 0.5s ease-in-out;
+}
