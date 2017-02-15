@@ -69,17 +69,17 @@ a:hover, a:active, a:focus {
 
 input {
     text-align:center;
-    font-family:'Bungee Hairline', cursive;
+    font-family:'Bungee Hairline', Arial, sans-serif;
     padding:20px 0;
     width:100%;
-    background:transparent;
+    background:#ffffff;
     border: none;
-    color:#fff;
+    color:#000000;
     border-bottom: 2px solid #eee;
 }
 
 input[type=submit] {
-  font-family:'Bungee Hairline', cursive;
+  font-family:'Bungee Hairline', Arial, sans-serif;
   color:#eb01d6;
   width:100%;
   border-bottom:2px solid #eb01d6;
